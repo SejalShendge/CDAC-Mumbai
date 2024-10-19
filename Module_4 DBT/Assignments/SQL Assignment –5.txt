@@ -1,0 +1,53 @@
+Assignment –5 Relational and Logical 
+Operators. 
+  
+1) Write a query that will give you all orders for more than Rs. 1,000.
+
+Ans: select * from Orders
+    -> where Amt > 1000;
+
+   
+2) Write a query that will give you the names and cities of all salespeople in 
+London with a commission above .10. 
+
+Ans:    select Snam, City
+    -> from Salespeople
+    -> WHERE City = 'London' AND Comm > 0.10;
+
+3) Write a query on the Customers table whose output will exclude all customers 
+with a rating <= 100, unless they are located in Rome. 
+
+ Ans: SELECT *
+FROM Customers
+WHERE (Rating > 100 OR City = 'Rome');
+  
+4) What will be the output from the following query?   
+Select * from Orders      
+where (amt < 1000 OR    
+NOT (odate = ‘1990-10-03’    
+AND cnum > 2003));  
+
+Ans: Ans: Orders with amt < 1000.
+Orders where the odate is not 1990-10-03 or the cnum is less than or equal to 2003.
+ 
+5) What will be the output of the following query?   
+Select * from Orders              
+where NOT ((odate = ‘1990-10-03’ OR snum   
+>1006) AND amt >= 1500);   
+
+Ans: Orders where either the odate is not '1990-10-03' and snum is less than or equal to 1006, or
+The amt is less than 1500.
+
+
+6) What is a simpler way to write this query?   
+Select snum, sname, city, comm From Salespeople              
+where (comm > .12 OR comm <.14); 
+
+Ans: SELECT snum, sname, city, comm
+FROM Salespeople
+WHERE comm <> 0.13;
+or 
+SELECT snum, sname, city, comm
+FROM Salespeople
+WHERE comm IS NOT NULL;
+

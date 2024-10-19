@@ -1,0 +1,12 @@
+Assignment –3
+
+ Overview of SQL.
+
+ 1) Does ANSI recognize the data type DATE? 
+
+Ans: Yes, ANSI recognizes the DATE data type. It is a standard SQL data type used to store date values in a YYYY-MM-DD format.
+
+
+2) Which subdivision of SQL is used to insert values in tables?
+
+Ans: the INSERT statement is used to add new rows of data into a table.
